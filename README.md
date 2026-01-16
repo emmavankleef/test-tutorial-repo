@@ -12,3 +12,5 @@ The goal of my-reproducible-manuscript is to follow this tutorial and learn more
 
 ##### Date
 16-01-2026
+
+The rendered `Quarto` file can be found [here](/doc/reprodev-exercise_quarto.html)
