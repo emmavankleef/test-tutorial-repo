@@ -21,62 +21,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="my-manuscript_files/libs/clipboard/clipboard.min.js"></script>
@@ -91,8 +36,6 @@ div.csl-indent {
 <script src="my-manuscript_files/libs/bootstrap/bootstrap.min.js"></script>
 <link href="my-manuscript_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="my-manuscript_files/libs/bootstrap/bootstrap-d6a003b94517c951b2d65075d42fb01b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="my-manuscript_files/libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="my-manuscript_files/libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 
 
 </head>
@@ -128,134 +71,18 @@ div.csl-indent {
 </header>
 
 
-<section id="meet-quarto" class="level2">
-<h2 class="anchored" data-anchor-id="meet-quarto">Meet <code>Quarto</code></h2>
-<p><code>Quarto</code> enables you to weave together content and executable code into a finished document. To learn more about Quarto see https://quarto.org.</p>
-</section>
-<section id="meet-the-boys-data" class="level2">
-<h2 class="anchored" data-anchor-id="meet-the-boys-data">Meet the <code>boys</code> data</h2>
-<p>The <code>boys</code> data from the <code>mice</code> package in <code>R</code> is a random sample of 10% from the cross-sectional data used to construct the Dutch growth references 1997. Variables gen and phb are ordered factors. reg is a factor.</p>
-<p>The following table shows the first 6 rows of the <code>boys</code> data.</p>
-<div class="columns">
-<div class="column" style="width:60%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mice<span class="sc">::</span>boys)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>     age  hgt   wgt   bmi   hc  gen  phb tv   reg
-3  0.035 50.1 3.650 14.54 33.7 &lt;NA&gt; &lt;NA&gt; NA south
-4  0.038 53.5 3.370 11.77 35.0 &lt;NA&gt; &lt;NA&gt; NA south
-18 0.057 50.0 3.140 12.56 35.2 &lt;NA&gt; &lt;NA&gt; NA south
-23 0.060 54.5 4.270 14.37 36.7 &lt;NA&gt; &lt;NA&gt; NA south
-28 0.062 57.5 5.030 15.21 37.3 &lt;NA&gt; &lt;NA&gt; NA south
-36 0.068 55.5 4.655 15.11 37.0 &lt;NA&gt; &lt;NA&gt; NA south</code></pre>
-</div>
-</div>
-</div><div class="column" style="width:40%;">
-<div class="quarto-figure quarto-figure-right">
-<figure class="figure">
-<p><img src="https://amices.org/mice/logo.png" class="img-fluid quarto-figure quarto-figure-right figure-img" style="width:60.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="links-you-need" class="level2">
-<h2 class="anchored" data-anchor-id="links-you-need">Links you need</h2>
-<ul>
-<li>You can find the link to the development repo of the <code>mice</code> package here: https://github.com/amices/mice</li>
-<li>The link to the <code>mice</code> logo is: https://amices.org/mice/logo.png</li>
-</ul>
-<section id="code-sourcing" class="level4">
-<h4 class="anchored" data-anchor-id="code-sourcing">Code sourcing</h4>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Read data</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>boys <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"../data/data.csv"</span>)[, <span class="sc">-</span><span class="dv">1</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(boys)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>    age  hgt   wgt   bmi   hc  gen  phb tv   reg
-1 0.035 50.1 3.650 14.54 33.7 &lt;NA&gt; &lt;NA&gt; NA south
-2 0.038 53.5 3.370 11.77 35.0 &lt;NA&gt; &lt;NA&gt; NA south
-3 0.057 50.0 3.140 12.56 35.2 &lt;NA&gt; &lt;NA&gt; NA south
-4 0.060 54.5 4.270 14.37 36.7 &lt;NA&gt; &lt;NA&gt; NA south
-5 0.062 57.5 5.030 15.21 37.3 &lt;NA&gt; &lt;NA&gt; NA south
-6 0.068 55.5 4.655 15.11 37.0 &lt;NA&gt; &lt;NA&gt; NA south</code></pre>
-</div>
-</div>
-</section>
-<section id="references" class="level4">
-<h4 class="anchored" data-anchor-id="references">References</h4>
-<p>Not every value in the <code>mice::boys</code> set is observed. This may pose problems with the analysis of the <code>boys</code> data. To get an idea about the problem, we can use missing data patterns. created the <a href="https://github.com/amices/ggmice" class="pkg"><code>ggmice</code></a> package to create a <a href="https://ggplot2.tidyverse.org" class="pkg"><code>ggplot2</code></a> <span class="citation" data-cites="ggplot2">(<a href="#ref-ggplot2" role="doc-biblioref">Wickham 2016</a>)</span> type plot of the missing values in the <code>boys</code> data.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(mice)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'mice'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked _by_ '.GlobalEnv':
-
-    boys</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following object is masked from 'package:stats':
-
-    filter</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    cbind, rbind</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggmice)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'ggmice'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:mice':
-
-    bwplot, densityplot, stripplot, xyplot</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># visualize ggplot2-like missing data pattern</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>mice<span class="sc">::</span>boys <span class="sc">|&gt;</span> </span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  ggmice<span class="sc">::</span><span class="fu">plot_pattern</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="my-manuscript_files/figure-html/mdpattern-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p>To cite the things in text you can use <span class="citation" data-cites="ggmice">(<a href="#ref-ggmice" role="doc-biblioref">Oberman 2025</a>)</span>.</p>
-</section>
-</section>
-<section id="descriptions-of-the-boys-data" class="level1">
-<h1>Descriptions of the <code>boys</code> data</h1>
-<p>The <code>boys</code> data contains 748 rows and 9 columns. In total there are 1622 missing values in the <code>boys</code> data, with the highest number of missing values in the tv column.</p>
 <section id="funny-fotos" class="level2">
 <h2 class="anchored" data-anchor-id="funny-fotos">Funny foto’s</h2>
 <p><img src="images/clipboard-3083031504.webp" class="img-fluid"></p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://www.instagram.com/p/DTQGlUYjRQp/"></video></div>
+<p><img src="images/clipboard-1412557333.png" class="img-fluid"></p>
 <section id="cute-panda" class="level3">
 <h3 class="anchored" data-anchor-id="cute-panda">Cute panda</h3>
 <p><img src="images/funny_panda.jpg" class="img-fluid"> <img src="images/foto.webp" class="img-fluid"></p>
-<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/F-X4SLhorvw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/9yCjGHonQ7o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
-
-</section>
+<p></p><div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/F-X4SLhorvw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/9yCjGHonQ7o" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div> <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/xvFZjo5PgG0" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div><p></p>
 </section>
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
-<div id="ref-ggmice" class="csl-entry" role="listitem">
-Oberman, Hanne. 2025. <em>Ggmice: Visualizations for ’Mice’ with ’Ggplot2’</em>. <a href="https://doi.org/10.32614/CRAN.package.ggmice">https://doi.org/10.32614/CRAN.package.ggmice</a>.
-</div>
-<div id="ref-ggplot2" class="csl-entry" role="listitem">
-Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Springer-Verlag New York. <a href="https://ggplot2.tidyverse.org">https://ggplot2.tidyverse.org</a>.
-</div>
-</div></section></div></main>
+</main>
 <!-- /main column -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -658,7 +485,6 @@ Wickham, Hadley. 2016. <em>Ggplot2: Elegant Graphics for Data Analysis</em>. Spr
   });
   </script>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
