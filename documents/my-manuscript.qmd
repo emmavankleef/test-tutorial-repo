@@ -66,6 +66,11 @@ The `boys` data contains `r nrow(boys)` rows and `r ncol(boys)` columns. In tota
 
 ![](images/clipboard-3083031504.webp)
 
+{{< video https://www.instagram.com/p/DTQGlUYjRQp/ >}}
+
+
+### Cute panda
+![](images/funny_panda.jpg)
 ![](images/foto.webp)
 
 {{< video https://www.youtube.com/watch?v=F-X4SLhorvw >}}
