@@ -71,3 +71,4 @@ The `boys` data contains `r nrow(boys)` rows and `r ncol(boys)` columns. In tota
 {{< video https://www.instagram.com/p/DTQGlUYjRQp/ >}}
 
 {{< video https://www.youtube.com/watch?v=F-X4SLhorvw >}}
+{{< video https://www.youtube.com/shorts/9yCjGHonQ7o >}}
